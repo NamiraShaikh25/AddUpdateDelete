@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="signup" method="POST">
+    {% csrf token %}
+    Name:<input type="text" name="name"><br>
+    Address:<input type="text" name="address"><br>
+    Salary:<input type="text" name="salary"><br>
+    <input type="submit">
+    </form>
+</body>
+</html>

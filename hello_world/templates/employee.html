@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table table-light table-bordered table-striped">
+    <tbody>
+    <tr>
+      <th>Employee Name</th>
+        <td>{{object.user.name}}</td>
+    </tr>
+    <tr>
+      <th>Employee Address</th>
+        <td>{{object.user.address}}</td>
+    </tr>
+    <tr>
+      <th>Employee Salary</th>
+        <td>{{object.user.salary}}</td>
+    </tr>
+    </tbody>
+</table>
+<div class="text-right">
+    <a class="btn btn-warning" href="{%url 'update_employee' user.id %}">Edit</a>
+    <a class="btn btn-warning" href="{%url 'employee_delete' user.id %}">Delete</a>
+</div>
+</body>
+</html>

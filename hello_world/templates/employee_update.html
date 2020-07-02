@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ {% csrf token %}
+<form action=" "POST>
+    <table class="table table-bordered table-light">
+        {{form.as_table}}
+
+    </table>
+    <button type="submit">Update employee</button>
+</form>
+</body>
+</html>
